@@ -20,9 +20,14 @@ char *get_tokens(char *line, unsigned int line_number)
 
 	holder = strtok(NULL, delimiter);
 	if (holder != NULL)
-	{/*trouver condition if integer utiliser atoi sinon error ?? */
-		fprintf(stderr, "L%d: usage: push integer\n", line_number);
-		exit(EXIT_FAILURE);
+	{
+		if (holder)
+			global_var = atoi(holder);
+		else
+		{
+			fprintf(stderr, "L%d: usage: push integer\n", line_number);
+			exit(EXIT_FAILURE);
+		}
 	}
 	else if (holder == NULL && strcmp(token, "push") == 0)
 	{
