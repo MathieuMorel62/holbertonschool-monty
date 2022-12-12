@@ -54,6 +54,5 @@ void swap(stack_t **stack, unsigned int line_number);
 void execute(char *op, stack_t **stack, unsigned int line_number);
 char *get_tokens(char *line, unsigned int line_number);
 void free_stack(stack_t *head);
-int is_number(char *s);
 
 #endif
