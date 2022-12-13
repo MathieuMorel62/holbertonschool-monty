@@ -7,7 +7,7 @@
  * Return: 0 is true or 1 is false
  */
 
-int _isdigit(char*c)
+int _isdigit(char *c)
 {
 	char *tmp = c;
 
