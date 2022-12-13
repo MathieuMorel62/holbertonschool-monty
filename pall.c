@@ -1,24 +1,20 @@
 #include "monty.h"
 
 /**
- * pall - check the code .
- * @stack: stack
- * @line_number: unused in this fonction
- * Return: to main.
+ * pall - prints all values from stack
+ * @stack: double pointer to the head of the stack
+ * @line_number: number of line
  */
 
 void pall(stack_t **stack, unsigned int line_number)
 {
-	stack_t *tmp = NULL;
-	(void)line_number;
-	tmp = *stack;
+	stack_t *temp = *stack;
 
-	if ((*stack) == NULL)
-		return;
+	(void) line_number;
 
-	while (tmp != NULL)
+	while (temp)
 	{
-		printf("%d\n", tmp->n);
-		tmp = tmp->next;
+		printf("%d\n", temp->n);
+		temp = temp->next;
 	}
 }

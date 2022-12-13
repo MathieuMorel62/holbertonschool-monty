@@ -1,36 +1,36 @@
 #include "monty.h"
 
 /**
- * execute - execute fonctions.
- * @stack: the list
- * @line: line read
- * @line_number: number of the lines
- * Return: the pointer to the appropriate function
+ * parse_command - search for the operation code
+ * @stack: pointer to the head of the stack
+ * @op: the line with commands and instructions
+ * @line_number: number of the line
  */
 
-int execute(char *line, stack_t **stack, unsigned int line_number)
+void parse_command(stack_t **stack, char *op, unsigned int line_number)
 {
+	int i;
 	instruction_t instructions[] = {
-	{"pall", pall},
-	{"pop", pop},
-	{"pint", pint},
-	{"swap", swap},
-	{"add", add},
-	{"#", nop},
-	{NULL, NULL}
+		{"push", push},
+		{"pall", pall},
+		{"pint", pint},
+		{"pop", pop},
+		{"swap", swap},
+		{"add", add},
+		{"nop", nop},
+		{NULL, NULL}
 	};
 
-	int index = 0;
-
-	while (instructions[index].opcode)
-	{
-		if (strcmp(line, instructions[index].opcode) == 0)
+	for (i = 0; instructions[i].opcode; i++)
+		if (strcmp(op, instructions[i].opcode) == 0)
 		{
-			instructions[index].f(stack, line_number);
-			return (EXIT_SUCCESS);
+			instructions[i].f(stack, line_number);
+			return;
 		}
-		index++;
+
+	if (strlen(op) != 0 && op[0] != '#')
+	{
+		printf("L%u: unknown instruction %s\n", line_number, op);
+		exit(EXIT_FAILURE);
 	}
-	fprintf(stderr, "L%d: unknown instruction %s\n", line_number, line);
-	exit(EXIT_FAILURE);
 }
