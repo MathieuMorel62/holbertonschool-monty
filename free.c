@@ -1,22 +1,22 @@
 #include "monty.h"
 
 /**
- * free_all - free all and close the file
- * @stack: list to free
- * @line: line of getline to free
- * @file: file to close
+ * global_free - frees memory
  */
 
-void free_all(stack_t *stack, char *line, FILE *file)
+void global_free(void)
 {
-	stack_t *tmp = stack;
+	stack_t *to_free;
+	stack_t *temp = NULL;
 
-	while (stack)
+	to_free = *global_head;
+
+	while (to_free)
 	{
-		tmp = stack;
-		stack = stack->next;
-		free(tmp);
+		temp = to_free->next;
+
+		free(to_free);
+
+		to_free = temp;
 	}
-	free(line);
-	fclose(file);
 }
