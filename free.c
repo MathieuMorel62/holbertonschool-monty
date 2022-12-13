@@ -1,18 +1,22 @@
 #include "monty.h"
 
 /**
- * free_stack - free a memory stack
- * @head: head of a stack
+ * free_all - free all and close the file
+ * @stack: list to free
+ * @line: line of getline to free
+ * @file: file to close
  */
 
-void free_stack(stack_t *head)
+void free_all(stack_t *stack, char *line, FILE *file)
 {
-	stack_t *tmp;
+	stack_t *tmp = stack;
 
-	while (head)
+	while (stack)
 	{
-		tmp = head->next;
-		free(head);
-		head = tmp;
+		tmp = stack;
+		stack = stack->next;
+		free(tmp);
 	}
+	free(line);
+	fclose(file);
 }

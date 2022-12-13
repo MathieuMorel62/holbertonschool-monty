@@ -16,7 +16,7 @@ void pall(stack_t **stack, unsigned int line_number)
 	if ((*stack) == NULL)
 		return;
 
-	while (tmp)
+	while (tmp != NULL)
 	{
 		printf("%d\n", tmp->n);
 		tmp = tmp->next;

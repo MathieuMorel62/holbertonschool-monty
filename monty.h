@@ -2,14 +2,17 @@
 #define MAIN_H
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <ctype.h>
 
 #define EXIT_SUCCESS 0
 #define EXIT_FAILURE 1
-
-extern int global_var;
-int global_var;
 
 /*--------------------- STRUCTURES ----------------------*/
 
@@ -46,13 +49,14 @@ typedef struct instruction_s
 
 /*-------------------- PROTOTYPES --------------------*/
 
-void push(stack_t **stack, unsigned int line_number);
+void push(char *token, stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
-void execute(char *op, stack_t **stack, unsigned int line_number);
-char *get_tokens(char *line, unsigned int line_number);
-void free_stack(stack_t *head);
+int execute(char *line, stack_t **stack, unsigned int line_number);
+void free_all(stack_t *stack, char *line, FILE *file);
+void add(stack_t **stack, unsigned int line_number);
+void nop(stack_t **stack, unsigned int line_number);
 
 #endif
