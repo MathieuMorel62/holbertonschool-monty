@@ -42,7 +42,7 @@ $ ./monty file.m
 
 ## Commands
 
-| Files Name     | Description | usage |                                                                                                                     
+| Files Name     | Description | Usage |                                                                                                                     
 |:----------:|:-------------:|:----------:|
 | [`push.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/push.c)| Pushes an element to the stack | push |                                                                                          
 | [`pall.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/pall.c)| Prints all the values on the stack, starting from the top of the stack. | pall |                                                                                      
@@ -54,6 +54,7 @@ $ ./monty file.m
 | [`sub.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/sub.c)| Subtracts the top element of the stack | sub |
 | [`div.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/div.c)| Divides the second top element of the stack | div |
 | [`mul.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/mul.c)| Multiplies the second top element of the stack | mul |
+| [`mod.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/mod.c)| Computes the rest of the division of the second top element of the stack | mod |
 
 ## Errors
 
