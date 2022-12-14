@@ -55,6 +55,7 @@ $ ./monty file.m
 | [`div.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/div.c)| Divides the second top element of the stack | div |
 | [`mul.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/mul.c)| Multiplies the second top element of the stack | mul |
 | [`mod.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/mod.c)| Computes the rest of the division of the second top element of the stack | mod |
+| [`pchar.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/pchar.c)| Prints the char at the top of the stack | pchar |
 
 ## Errors
 
