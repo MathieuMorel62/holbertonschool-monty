@@ -52,6 +52,7 @@ $ ./monty file.m
 | [`add.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/add.c)| Adds the top two elements of the stack. | add |                                                                                           
 | [`nop.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/nop.c)| Doesn’t do anything. | nop |                                                                                   
 | [`sub.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/sub.c)| Subtracts the top element of the stack | sub |
+| [`div.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/div.c)| Divides the second top element of the stack | div |
 
 ## Errors
 
