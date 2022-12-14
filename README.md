@@ -43,7 +43,7 @@ $ ./monty file.m
 ## Commands
 
 | Files Name     | Description | usage |                                                                                                                     
-|----------|-------------|----------|
+|:----------:|:-------------:|:----------:|
 | [`push.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/push.c)| Pushes an element to the stack | push |                                                                                          
 | [`pall.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/pall.c)| Prints all the values on the stack, starting from the top of the stack. | pall |                                                                                      
 | [`pint.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/pint.c)| Prints the value at the top of the stack, followed by a new line. | pint |                                                                          
