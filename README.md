@@ -42,15 +42,16 @@ $ ./monty file.m
 
 ## Commands
 
-| Command     | Description                                                                                                            | usage                  |
-|-------------|------------------------------------------------------------------------------------------------------------------------|--------------------------
-| `push`        | pushes an element to the stack                                                                                          | push <int>        |
-| `pall`        | prints all the values on the stack, starting from the top of the stack.                                                                                       | pall |
-| `pint`        | prints the value at the top of the stack, followed by a new line.                                                                                   | pint            |
-| `pop`        | removes the top element of the stack.                                                                                      | pop        |
-| `swap`        | swaps the top two elements of the stack                                                                                            | swap         |
-| `add`        | adds the top two elements of the stack.                                                                                            | add         |
-| `nop`        | doesn’t do anything.                                                                                            | nop         |
+| Files Name     | Description | usage |                                                                                                                     
+|----------|-------------|----------|
+| [`push.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/push.c)| Pushes an element to the stack | push |                                                                                          
+| [`pall.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/pall.c)| Prints all the values on the stack, starting from the top of the stack. | pall |                                                                                      
+| [`pint.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/pint.c)| Prints the value at the top of the stack, followed by a new line. | pint |                                                                          
+| [`pop.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/pop.c)| Removes the top element of the stack. | pop |                                                                                      
+| [`swap.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/swap.c)| Swaps the top two elements of the stack | swap |                                                                                          
+| [`add.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/add.c)| Adds the top two elements of the stack. | add |                                                                                           
+| [`nop.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/nop.c)| Doesn’t do anything. | nop |                                                                                   
+| [`sub.c`](https://github.com/MathieuMorel62/holbertonschool-monty/blob/main/sub.c)| Subtracts the top element of the stack | sub |
 
 ## Errors
 
